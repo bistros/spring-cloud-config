@@ -210,7 +210,7 @@ public class MultipleJGitEnvironmentRepository extends JGitEnvironmentRepository
 		return this.placeholders.get(key);
 	}
 
-	private JGitEnvironmentRepository getRepository(JGitEnvironmentRepository source,
+	JGitEnvironmentRepository getRepository(JGitEnvironmentRepository source,
 			String uri) {
 		JGitEnvironmentRepository repository = new JGitEnvironmentRepository(null);
 		File basedir = repository.getBasedir();
